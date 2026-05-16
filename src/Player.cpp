@@ -16,12 +16,7 @@ int Player::getsum() {
     for(int c : carti) s += c;
     return s;
 }
-void Player::reset()
-{
-     carti.clear();
-     
-  
-}
+
 void Player::popbeck(){
 
        carti.pop_back();

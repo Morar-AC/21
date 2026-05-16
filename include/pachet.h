@@ -15,7 +15,7 @@ public:
     int drawperfect(int curr, int l);
     int sz();
      void add(int c);
-        [[maybe_unused]] void del(int val);
+       
         
       
 

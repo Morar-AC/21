@@ -19,18 +19,7 @@ void pachet::add(int c)
     deck.push_back(c);
 
 }
-void pachet:: del(int val)
-{
-     for(auto it = deck.begin();it!=deck.end();it++)
-     {
-         if(*it == val)
-         {
-            deck.erase(it);
-            return;
-         }
-     }
- 
-}
+
 int pachet::draw() {
     if(deck.empty()) 
     return 0;
