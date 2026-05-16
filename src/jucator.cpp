@@ -67,7 +67,7 @@ bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
             std::cout << "alege un trump card\n";
             int op1; 
             std::cin >> op1;
-            if(op1 >= 0 && op1 < trump.size()) {
+           if(op1 >= 0 && op1 < static_cast<int>(trump.size())) {
                 
              tcards* card1 = trump[op1];
              trump.erase(trump.begin() + op1);
