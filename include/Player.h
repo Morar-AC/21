@@ -23,7 +23,7 @@ public:
          void reset();
 
 
-    virtual bool decizie(pachet& d, int& lim, Player* opp,Game* joc) = 0;
+    virtual bool decizie(pachet& d, Player* opp,Game* joc) = 0;
 };
 
 

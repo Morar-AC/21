@@ -9,7 +9,9 @@
 #include"limita27.h"
 
 
-bool jucator :: decizie(pachet& d, int& lim, Player* opp,Game* joc) {
+bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
+    (void)opp;
+    
     while(true) {
         std::cout << "apasa 1 ca sa tragi, 2 ca sa stai sau 3 ca sa folosesti un trump card\n";
         int op; 

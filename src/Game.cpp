@@ -70,7 +70,7 @@ void Game::play() {
         Renderer::afisHand(bot->listacards(), 1);
 
         if(!stay1)
-         stay1 = p1->decizie(d, lim, bot,this);
+         stay1 = p1->decizie(d, bot,this);
 
  Renderer::curatare();
         std::cout << "pachetul tau\n";
@@ -80,7 +80,7 @@ void Game::play() {
          std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
         if(!stay2)
-         stay2 = bot->decizie(d, lim, p1,this);
+         stay2 = bot->decizie(d, p1,this);
         if(d.sz() == 0) {
              stay1 = stay2 = 1; 
             }

@@ -2,11 +2,15 @@
 
 
 
-bool Bot::decizie(pachet& d, int& lim, Player* opp,Game* joc) {
-    if(getsum() < lim - 3) {
+bool Bot::decizie(pachet& d, Player* opp,Game* joc) {
+   
+   (void)opp;
+    int val = joc->limita();
+    
+   
+    if(getsum() < val - 3) {
         add(d.draw());
-        int ind = d.gennr(1,5);
-        
+       
 
         return false;
     }
