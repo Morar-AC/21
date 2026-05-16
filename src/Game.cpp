@@ -61,7 +61,7 @@ void Game::play() {
 
     bool stay1 = 0,stay2 = 0;
     while(!stay1 || !stay2) {
-     stay1 = stay2 = 0;
+     stay2 = 0;
 
         Renderer::curatare();
         std::cout << "pachetul tau\n";
