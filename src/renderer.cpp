@@ -1,5 +1,5 @@
-#include "Renderer.h"
-#include <iostream>
+#include  "Renderer.h"
+#include  <iostream>
 
 const std::vector<std::vector<std::string>> Renderer::digits = {
     { " ### ", " # # ", " # # ", " # # ", " ### " }, // 0

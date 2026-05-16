@@ -3,21 +3,27 @@
 #include <vector>
 #include <string>
 #include "pachet.h"
+#include "tcards.h"
+
+class Game;
+class tcards;
+class pachet;
+
 
 class Player {
 protected:
     std::vector<int>carti;
-    std::vector<std::string>trump;
+    std::vector< tcards* >trump;
 public:
     virtual ~Player();
-    void add(int c);
     int getsum();
-    void remove();
-    void reset() ;
     std::vector<int>&listacards();
-    std::vector<std::string>& listatrumps();
-    
-    virtual bool decizie(pachet& d, int& lim, Player* opp) = 0;
+     void add(int val);
+    void popbeck();
+         void reset();
+
+
+    virtual bool decizie(pachet& d, int& lim, Player* opp,Game* joc) = 0;
 };
 
 

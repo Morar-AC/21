@@ -4,6 +4,10 @@
 
 Player::~Player()
 {
+   for(tcards* k : trump)
+   delete k;
+
+   trump.clear();
    
 
 }
@@ -12,25 +16,25 @@ int Player::getsum() {
     for(int c : carti) s += c;
     return s;
 }
-void Player::add(int c)
-  {
-    carti.push_back(c);
-  }
-void Player::remove()
-{
-    carti.pop_back();
-}
 void Player::reset()
 {
-    carti.clear();
+     carti.clear();
+     
+  
+}
+void Player::popbeck(){
+
+       carti.pop_back();
+       
+   
 }
 std::vector<int>&Player::listacards()
 {
       return carti;
 
 }
-std::vector<std::string>&Player::listatrumps()
+void Player::add(int val)
 {
-      return trump;
+         carti.push_back(val);
 
 }

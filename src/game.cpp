@@ -10,10 +10,38 @@ Game::Game() : lim(21) {
     p1 = new jucator();
     bot = new Bot();
 }
+void Game::setlimnou(){
 
+     lim = 27;
+     
+
+}
 Game::~Game() { 
     delete p1; delete bot;
  }
+Player* Game::getp1(){
+
+      return p1;
+
+}
+pachet& Game::getpk()
+{
+
+  return d;
+
+}
+int Game::limita()
+{
+    return lim;
+
+
+}
+Player*Game::getbot()
+{
+   return bot;
+   
+
+}
 
 void Game::play() {
    
@@ -42,9 +70,17 @@ void Game::play() {
         Renderer::afisHand(bot->listacards(), 1);
 
         if(!stay1)
-         stay1 = p1->decizie(d, lim, bot);
+         stay1 = p1->decizie(d, lim, bot,this);
+
+ Renderer::curatare();
+        std::cout << "pachetul tau\n";
+        Renderer::afisHand(p1->listacards(), 0);
+        std::cout << "\npachet oponent\n";
+        Renderer::afisHand(bot->listacards(), 1);
+         std::this_thread::sleep_for(std::chrono::milliseconds(500));
+
         if(!stay2)
-         stay2 = bot->decizie(d, lim, p1);
+         stay2 = bot->decizie(d, lim, p1,this);
         if(d.sz() == 0) {
              stay1 = stay2 = 1; 
             }

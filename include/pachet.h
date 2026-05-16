@@ -14,7 +14,10 @@ public:
     int draw();
     int drawperfect(int curr, int l);
     int sz();
-    
-    
+     void add(int c);
+        void del(int val);
+        
+      
+
 };
 #endif

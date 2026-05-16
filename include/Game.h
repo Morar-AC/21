@@ -3,6 +3,10 @@
 #include "Player.h"
 #include "pachet.h"
 
+
+class Player;
+
+
 class Game {
 private:
     Player *p1, *bot;
@@ -12,5 +16,13 @@ public:
     Game();
     ~Game();
     void play();
+  
+    int limita();
+    Player* getp1();
+    pachet& getpk();
+    Player* getbot();
+     void setlimnou();
+     
+
 };
 #endif
