@@ -16,10 +16,10 @@ class tcards{
 
       
          public:
-        tcards(std::string nm1,std::string m1);
+      tcards(const std::string& n1, const std::string& m1);
          virtual ~tcards();
         virtual void ceface(Game* elem) = 0;
-    std::string getnume();
+   const std::string& getnume() const;
          
 
 

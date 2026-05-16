@@ -2,16 +2,14 @@
 
 
 
-tcards::tcards(std::string n1,std::string m1)
-{
-  this->nume = n1;
-  this->msg = m1;
-
+tcards::tcards(const std::string& n1, const std::string& m1) {
+    nume = n1;
+    msg = m1;
 }
-std::string tcards::getnume()
-{
-  return nume;
 
+
+const std::string& tcards::getnume() const {
+    return nume;
 }
 
 tcards::~tcards(){}

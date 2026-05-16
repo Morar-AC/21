@@ -48,7 +48,7 @@ int pachet::draw() {
 
 int pachet::drawperfect(int curr,int l) {
     int kk = -1;
-    for(int j = 0; j <deck.size();++j) {
+    for(size_t j = 0; j <deck.size();++j) {
         if(deck[j] + curr <= l) 
         kk = j;
     }

@@ -61,7 +61,7 @@ bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
         if(op == 2) return true;
         if(op == 3) {
 
-           for(int i = 0;i<trump.size();++i) {
+           for(size_t i = 0;i<trump.size();++i) {
                 std::cout<<i<< " " <<trump[i]->getnume() << "\n";
             }
             std::cout << "alege un trump card\n";
