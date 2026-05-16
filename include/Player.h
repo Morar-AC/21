@@ -20,7 +20,7 @@ public:
     std::vector<int>&listacards();
      void add(int val);
     void popbeck();
-         void reset();
+        [[maybe_unused]] void reset();
 
 
     virtual bool decizie(pachet& d, Player* opp,Game* joc) = 0;
