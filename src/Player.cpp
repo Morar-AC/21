@@ -11,6 +11,10 @@ Player::~Player()
    
 
 }
+Player::Player(const Player& other) {
+    this->carti = other.carti; 
+    this->trump = other.trump;
+}
 int Player::getsum() {
     int s = 0;
     for(int c : carti) s += c;
@@ -52,4 +56,16 @@ std::istream& operator>>(std::istream& is, Player& p) {
     
 
     return is; 
+}
+Player& Player::operator=(const Player& other) {
+   
+    if (this == &other) {
+        return *this;
+    }
+
+   
+    this->carti = other.carti;
+    this->trump = other.trump;
+
+    return *this;
 }

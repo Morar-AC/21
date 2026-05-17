@@ -17,6 +17,8 @@ protected:
     std::string nume;
 
 public:
+Player() = default;
+
     virtual ~Player();
     int getsum();
     std::vector<int>&listacards();
@@ -24,7 +26,8 @@ public:
     void popbeck();
        const std::string& getnume() const;
        void setnume(const std::string& n);
-
+Player(const Player& other);
+Player& operator=(const Player& other);
 
     virtual bool decizie(pachet& d, Player* opp,Game* joc) = 0;
 };

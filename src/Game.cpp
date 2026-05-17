@@ -7,7 +7,10 @@
 #include "jucator.h"
 #include "Bot.h"
 
-Game::Game() : lim(21) {
+
+int Game::lim = 21;
+
+Game::Game()  {
     p1 = new jucator();
     bot = new Bot();
 

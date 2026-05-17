@@ -11,7 +11,7 @@ class Game {
 private:
     Player *p1, *bot;
     pachet d;
-    int lim;
+    static int lim;
     
     istoric<int> istoricnr;
     istoric<std::string> istoricdetalii;
