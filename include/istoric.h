@@ -19,16 +19,8 @@ void istoric<T>::addistoric(const T& element) {
     lista.push_back(element);
 }
 
-template <typename T>
-void istoric<T>::afisistoric() const {
-    std::cout << "Istoric joc:\n";
 
-   
-    std::for_each(lista.begin(), lista.end(), [](const T& elem) {
-    
-        std::cout << "Runda:  " << elem << "\n";
-    });
-}
+
 
 
 
