@@ -52,9 +52,9 @@ Player*Game::getbot()
 
 void Game::play() {
    
-   bool maijoci = 1;
+  
    int cnt = 0;
-   while(maijoci){
+   while(true){
    
     p1->listacards().clear();
         bot->listacards().clear();

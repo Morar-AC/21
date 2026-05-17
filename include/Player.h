@@ -22,7 +22,7 @@ public:
     std::vector<int>&listacards();
      void add(int val);
     void popbeck();
-       std::string getnume() const;
+       const std::string& getnume() const;
        void setnume(const std::string& n);
 
 

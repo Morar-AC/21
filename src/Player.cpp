@@ -33,7 +33,7 @@ void Player::add(int val)
          carti.push_back(val);
 
 }
-std::string Player::getnume() const {
+const std::string& Player::getnume() const {
     return nume;
 }
 void Player::setnume(const std::string&n )

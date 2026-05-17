@@ -10,7 +10,7 @@ private:
 
 public:
    
-    exceptiondeck(const std::string& msg);
+    explicit exceptiondeck(const std::string& msg);
     
   
     virtual ~exceptiondeck() noexcept override;
