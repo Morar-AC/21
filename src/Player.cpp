@@ -32,14 +32,7 @@ std::vector<int>&Player::listacards()
       return carti;
 
 }
-void Player::getrumps()
-{
-      for(tcards* k : trump)
-   delete k;
 
-   trump.clear();
-
-}
 void Player::add(int val)
 {
          carti.push_back(val);

@@ -22,7 +22,7 @@ Player() = default;
     virtual ~Player();
     int getsum();
     std::vector<int>&listacards();
-  void getrumps();
+  
      void add(int val);
     void popbeck();
        const std::string& getnume() const;

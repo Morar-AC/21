@@ -61,7 +61,7 @@ void Game::play() {
    
     p1->listacards().clear();
         bot->listacards().clear();
-       p1->getrumps();
+     
 
          for( int i = 1;i<=11;++i)
            {
