@@ -33,3 +33,23 @@ void Player::add(int val)
          carti.push_back(val);
 
 }
+std::string Player::getnume() const {
+    return nume;
+}
+void Player::setnume(const std::string&n )
+{
+      nume = n;
+
+}
+std::istream& operator>>(std::istream& is, Player& p) {
+    std::string nume1;
+    
+   
+    is >> nume1; 
+    
+    
+    p.setnume(nume1); 
+    
+
+    return is; 
+}

@@ -15,6 +15,7 @@ public:
     int drawperfect(int curr, int l);
     int sz();
      void add(int c);
+       bool exista(int val);
        
         
       

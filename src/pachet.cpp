@@ -4,7 +4,21 @@ pachet::pachet():gen(time(0)) {
     for(int i = 1;i<=11;++i) 
     deck.push_back(i);
 }
+bool pachet::exista(int val)
+{
+     int ok = 0;
+   for(size_t j = 0; j <deck.size();++j) { 
+          if(deck[j] == val)
+             ok = 1;
+    
+}
+ 
+   if(ok)
+   return true;
+   else return false;
+   
 
+}
 int pachet::gennr(int st, int dr) {
     std::uniform_int_distribution<int>dist(st, dr);
     return dist(gen);

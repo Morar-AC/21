@@ -7,6 +7,8 @@
 #include"rmp.h"
 #include"rst.h"
 #include"limita27.h"
+#include<algorithm>
+
 
 
 bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
@@ -60,10 +62,12 @@ bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
         }
         if(op == 2) return true;
         if(op == 3) {
-
-           for(size_t i = 0;i<trump.size();++i) {
-                std::cout<<i<< " " <<trump[i]->getnume() << "\n";
-            }
+std::sort(trump.begin(), trump.end(), [](const tcards* a, const tcards* b) {
+        return *a < *b;
+    });
+         for(size_t i = 0; i < trump.size(); ++i) {
+        std::cout << i << " " << *(trump[i]) << "\n"; 
+}
             std::cout << "alege un trump card\n";
             int op1; 
             std::cin >> op1;

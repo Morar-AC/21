@@ -6,7 +6,7 @@ class rst : public tcards{
 
 
     public:
-       rst():tcards("Acest card iti reseteaza deckul!", "Ai primit un trump card de reset!\n"){}
+       rst():tcards("Acest card iti reseteaza deckul!", "Ai primit un trump card de reset!\n",1){}
       void ceface(Game *opp) override;
      
 

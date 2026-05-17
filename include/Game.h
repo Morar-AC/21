@@ -2,8 +2,8 @@
 #define GAME_H
 #include "Player.h"
 #include "pachet.h"
-
-
+#include "istoric.h"
+#include <string>
 class Player;
 
 
@@ -12,6 +12,9 @@ private:
     Player *p1, *bot;
     pachet d;
     int lim;
+    
+    istoric<int> istoricnr;
+    istoric<std::string> istoricdetalii;
 public:
     Game();
     ~Game();

@@ -7,7 +7,7 @@ class limita27 : public tcards{
 
     public:
       
-   limita27():tcards("Acest card iti permite sa joci pana la 27!", "Ai primit un trump card de 27!\n") {} 
+   limita27():tcards("Acest card iti permite sa joci pana la 27!", "Ai primit un trump card de 27!\n",4) {} 
     
    void ceface(Game* opp) override;
 
