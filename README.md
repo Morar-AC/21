@@ -81,7 +81,7 @@ Nerespectarea duce la nepunctarea proiectului
 - [ ] clase template
   - [ ] crearea unei clase template [*](https://github.com/Ionnier/poo/tree/main/labs/L08)
   - [ ] 2 instanțieri ale acestei clase
-- [ ] STL [*](https://github.com/Ionnier/poo/tree/main/labs/L07#stl)
+- [x] STL [*](https://github.com/Ionnier/poo/tree/main/labs/L07#stl)
   - [ ] utilizarea a două structuri (containere) diferite (vector, list sau orice alt container care e mai mult sau mai putin un array)
   - [ ] utilizarea a unui algoritm cu funcție lambda (de exemplu, sort, transform)
 -  [ ] Design Patterns [*](https://github.com/Ionnier/poo/tree/main/labs/L08)
