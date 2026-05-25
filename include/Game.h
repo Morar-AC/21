@@ -6,7 +6,6 @@
 #include <string>
 class Player;
 
-
 class Game {
 private:
     Player *p1, *bot;

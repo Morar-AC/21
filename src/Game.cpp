@@ -100,6 +100,11 @@ try{
         Renderer::afisHand(bot->listacards(), 1);
 
        
+       
+
+           if(d.sz() == 0) {
+      throw exceptiondeck("Pachetul de carti e gol!");
+          }
          stay1 = p1->decizie(d, bot,this);
 
  Renderer::curatare();
@@ -110,10 +115,11 @@ try{
          std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
        
-         stay2 = bot->decizie(d, p1,this);
-       if(d.sz() == 0) {
+           if(d.sz() == 0) {
       throw exceptiondeck("Pachetul de carti e gol!");
-}
+      }
+         stay2 = bot->decizie(d, p1,this);
+  
     }
 }
 catch (const exceptiondeck& e) {

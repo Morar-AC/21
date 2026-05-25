@@ -21,7 +21,7 @@ bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
         
         if(op == 1 ) {
           
-          if(d.sz() > 0){
+         
           
             int c = d.draw();
             add(c);
@@ -55,16 +55,15 @@ bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
             }
             
             std::this_thread::sleep_for(std::chrono::milliseconds(3000));
-        }
+        
             return false;
         
       
         }
         if(op == 2) return true;
         if(op == 3) {
-std::sort(trump.begin(), trump.end(), [](const tcards* a, const tcards* b) {
-        return *a < *b;
-    });
+std::sort(trump.begin(), trump.end());
+  
          for(size_t i = 0; i < trump.size(); ++i) {
         std::cout << i << " " << *(trump[i]) << "\n"; 
 }

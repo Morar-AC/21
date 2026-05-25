@@ -23,13 +23,13 @@ void Renderer::curatare() {
 
 void Renderer::afisHand(const std::vector<int>& numbers, bool hidden) {
     for (size_t i = 0; i < numbers.size(); ++i) {
-        int val = (hidden && i > 0) ? 12 : numbers[i];
+        int val = (hidden && i == 0) ? 12 : numbers[i];
         std::cout << "+" << std::string(digits[val][0].length(), '-') << "+  ";
     }
     std::cout << "\n";
     for (int line = 0; line < 5; ++line) {
         for (size_t i = 0; i < numbers.size(); ++i) {
-            int val = (hidden && i > 0) ? 12 : numbers[i];
+            int val = (hidden && i == 0) ? 12 : numbers[i];
             std::cout << "|" << digits[val][line] << "|  ";
         }
         std::cout << "\n";
