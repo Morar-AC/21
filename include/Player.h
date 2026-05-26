@@ -32,7 +32,7 @@ Player(const Player& other);
   
 Player& operator=(const Player& other);
 
-    virtual bool decizie(pachet& d, Player* opp,Game* joc) = 0;
+    virtual bool decizie(pachet& d,Game* joc) = 0;
 };
 std::istream& operator>>(std::istream& is, Player& p);
 

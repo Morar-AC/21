@@ -2,9 +2,9 @@
 
 
 
-bool Bot::decizie(pachet& d, Player* opp,Game* joc) {
+bool Bot::decizie(pachet& d,Game* joc) {
    
-   (void)opp;
+  
     int val = joc->limita();
     
     

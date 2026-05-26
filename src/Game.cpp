@@ -112,7 +112,7 @@ try{
            if(d.sz() == 0) {
       throw exceptiondeck("Pachetul de carti e gol!");
           }
-         stay1 = p1->decizie(d, bot,this);
+         stay1 = p1->decizie(d,this);
 
  Renderer::curatare();
         std::cout << "Pachetul lui " + p1->getnume() + "\n";
@@ -125,7 +125,7 @@ try{
            if(d.sz() == 0) {
       throw exceptiondeck("Pachetul de carti e gol!");
       }
-         stay2 = bot->decizie(d, p1,this);
+         stay2 = bot->decizie(d,this);
   
     }
 }

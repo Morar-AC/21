@@ -11,8 +11,8 @@
 
 
 
-bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
-    (void)opp;
+bool jucator :: decizie(pachet& d,Game* joc) {
+    
     
     while(true) {
         std::cout << "apasa 1 ca sa tragi, 2 ca sa stai sau 3 ca sa folosesti un trump card\n";

@@ -5,6 +5,6 @@
 
 class Bot : public Player {
 public:
-    bool decizie(pachet& d, Player* opp,Game* joc) override;
+    bool decizie(pachet& d,Game* joc) override;
 };
 #endif
