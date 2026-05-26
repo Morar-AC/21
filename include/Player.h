@@ -7,7 +7,7 @@
 
 class Game;
 class tcards;
-class pachet;
+
 
 
 class Player {
@@ -28,6 +28,8 @@ Player() = default;
        const std::string& getnume() const;
        void setnume(const std::string& n);
 Player(const Player& other);
+  void cleartrumps();
+  
 Player& operator=(const Player& other);
 
     virtual bool decizie(pachet& d, Player* opp,Game* joc) = 0;

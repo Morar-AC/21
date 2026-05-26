@@ -62,7 +62,11 @@ bool jucator :: decizie(pachet& d, Player* opp,Game* joc) {
         }
         if(op == 2) return true;
         if(op == 3) {
-std::sort(trump.begin(), trump.end());
+std::sort(trump.begin(), trump.end(),[](const tcards* c1,const tcards *c2)
+{
+    return *c1 < *c2;
+
+});
   
          for(size_t i = 0; i < trump.size(); ++i) {
         std::cout << i << " " << *(trump[i]) << "\n"; 

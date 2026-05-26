@@ -4,6 +4,7 @@
 #include "pachet.h"
 #include "istoric.h"
 #include <string>
+
 class Player;
 
 class Game {

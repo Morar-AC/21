@@ -11,6 +11,20 @@ Player::~Player()
    
 
 }
+
+void Player::cleartrumps(){
+
+  
+    for(tcards *x : trump)
+    delete x;
+
+    trump.clear();
+    
+ 
+
+}
+
+
 Player::Player(const Player& other) {
     this->carti = other.carti; 
     this->trump = other.trump;
