@@ -22,12 +22,8 @@ std::cout << "Alege un nume!\n ";
 }
 void Game::setlimnou(){
 
-     if(lim == 27)
-    lim = 21;
-    else lim = 27;
-
-     
-
+    lim = 27;
+    
 }
 Game::~Game() { 
     delete p1; delete bot;
@@ -66,7 +62,8 @@ void Game::play() {
         bot->listacards().clear();
      
            p1->cleartrumps();
-              setlimnou();
+             lim = 21;
+             
               
               
 

@@ -46,7 +46,12 @@ void Renderer::afisHand(const std::vector<int>& numbers, bool hidden) {
         std::cout << "\n";
     }
     for (size_t i = 0; i < numbers.size(); ++i) {
-        int val = (hidden && i > 0) ? 12 : numbers[i];
+           int val;
+          if (hidden && i == 0) {
+    val = 12;         
+} else {
+    val = numbers[i];  
+}
         std::cout << "+" << std::string(digits[val][0].length(), '-') << "+  ";
     }
     std::cout << "\n";
